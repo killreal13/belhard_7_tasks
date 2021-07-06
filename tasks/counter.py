@@ -17,3 +17,7 @@
 - метод __iter__
 - метод __next__
 """
+
+
+class Counter:
+

@@ -19,3 +19,19 @@
 
 Вывести студентов, у которых средний балл больше 5
 """
+
+
+class Student:
+    surname: str
+    name: str
+    group: int
+    average_score: float
+
+    def __init__(self, surname, name, group, average_score):
+        self.surname = surname
+        self.name = name
+        self. group = group
+        self.average_score = average_score
+
+    def __eq__(self, other):
+        self.average_score == other.aver
