@@ -37,7 +37,9 @@ class Counter:
         return self
 
     def __next__(self):
-        return self.value
+        value = self.value
+        self.increase()
+        return value
 
 
 
