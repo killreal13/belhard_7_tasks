@@ -25,29 +25,20 @@ class Counter:
     def __init__(self, value: int = 0):
         self.value = value
 
-    @classmethod
-    def increase(cls):
-        cls.value += 1
-        return cls.value
+    def increase(self, num=1):
+        self.value += num
+        return self.value
 
-    @classmethod
-    def decrease(cls):
-        cls.value -= 1
-        return cls.value
+    def decrease(self, num=1):
+        self.value -= num
+        return self.value
 
     def __iter__(self):
-        return iter(self.value)
+        return self
 
     def __next__(self):
-        return next(self.value)
+        return self
 
-Counter.value = 0
-print(Counter.value)
-
-print(Counter.increase())
-
-for value in Counter.value:
-    print(value)
 
 
 

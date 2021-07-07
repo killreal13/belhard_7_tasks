@@ -11,3 +11,23 @@
 - метод generate, который принимает длину последовательности n
 - метод print_seq, который выводит последовательность на экран
 """
+
+
+class RandSequence:
+    sequence = []
+
+    def __init__(self, n):
+        self.n = n
+
+    def generate(self):
+        for i in range(self.n):
+            self.sequence[i] = i
+        return self.sequence
+
+    def print_seq(self):
+        print(self.sequence)
+
+
+RandSequence.n = 15
+RandSequence.generate(RandSequence)
+RandSequence.print_seq()
