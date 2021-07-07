@@ -34,4 +34,34 @@ class Student:
         self.average_score = average_score
 
     def __eq__(self, other):
-        self.average_score == other.aver
+        return self.average_score == other.average_score
+
+    def __ne__(self, other):
+        return self.average_score != other.average_score
+
+    def __lt__(self, other):
+        return self.average_score < other.average_score
+
+    def __gt__(self, other):
+        return self.average_score > other.average_score
+
+    def __le__(self, other):
+        return self.average_score <= other.average_score
+
+    def __ge__(self, other):
+        return self.average_score >= other.average_score
+
+    def __repr__(self):
+        return f'<Student surname: {self.surname}, student name: {self.name}, score: {self.average_score}'
+
+
+students_list = [
+    Student('Targaryen', 'Daenerys', 27, 8.8),
+    Student('Snow', 'Jon', 27, 3.7),
+    Student('Stark', 'Arya', 27, 5.1),
+    Student('Stark', 'Sansa', 27, 6.2),
+    Student('Clegane', 'Sandor', 27, 2.2)
+]
+
+print(sorted(students_list))
+print(sorted(students_list, reverse=True))
