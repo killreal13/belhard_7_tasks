@@ -21,13 +21,8 @@ class RandSequence:
 
     def generate(self):
         for i in range(self.n):
-            self.sequence[i] = i
+            self.sequence.append(i)
         return self.sequence
 
     def print_seq(self):
         print(self.sequence)
-
-
-RandSequence.n = 15
-RandSequence.generate(RandSequence)
-RandSequence.print_seq()

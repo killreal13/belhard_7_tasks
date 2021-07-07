@@ -62,6 +62,3 @@ students_list = [
     Student('Stark', 'Sansa', 27, 6.2),
     Student('Clegane', 'Sandor', 27, 2.2)
 ]
-
-print(sorted(students_list))
-print(sorted(students_list, reverse=True))
